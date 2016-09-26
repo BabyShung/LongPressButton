@@ -14,6 +14,8 @@
 		B8D05E091D98C38800DC328F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D05E071D98C38800DC328F /* LaunchScreen.storyboard */; };
 		B8D05E141D98C38800DC328F /* LongPressButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D05E131D98C38800DC328F /* LongPressButtonTests.swift */; };
 		B8D05E1F1D98C38800DC328F /* LongPressButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D05E1E1D98C38800DC328F /* LongPressButtonUITests.swift */; };
+		B8D05E2E1D98C3C600DC328F /* LongPressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D05E2D1D98C3C600DC328F /* LongPressButton.swift */; };
+		B8D05E301D98C3D900DC328F /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D05E2F1D98C3D900DC328F /* UIView+Shadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B8D05E1A1D98C38800DC328F /* LongPressButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongPressButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D05E1E1D98C38800DC328F /* LongPressButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressButtonUITests.swift; sourceTree = "<group>"; };
 		B8D05E201D98C38800DC328F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8D05E2D1D98C3C600DC328F /* LongPressButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressButton.swift; sourceTree = "<group>"; };
+		B8D05E2F1D98C3D900DC328F /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				B8D05E051D98C38800DC328F /* Assets.xcassets */,
 				B8D05E071D98C38800DC328F /* LaunchScreen.storyboard */,
 				B8D05E0A1D98C38800DC328F /* Info.plist */,
+				B8D05E2D1D98C3C600DC328F /* LongPressButton.swift */,
+				B8D05E2F1D98C3D900DC328F /* UIView+Shadow.swift */,
 			);
 			path = LongPressButton;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8D05E301D98C3D900DC328F /* UIView+Shadow.swift in Sources */,
 				B8D05E011D98C38800DC328F /* ViewController.swift in Sources */,
 				B8D05DFF1D98C38800DC328F /* AppDelegate.swift in Sources */,
+				B8D05E2E1D98C3C600DC328F /* LongPressButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
