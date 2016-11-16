@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8B2A4001D996BCF0032D83B /* UIView+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B2A3FF1D996BCF0032D83B /* UIView+Shadow.m */; };
 		B8D05DFF1D98C38800DC328F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D05DFE1D98C38800DC328F /* AppDelegate.swift */; };
 		B8D05E011D98C38800DC328F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D05E001D98C38800DC328F /* ViewController.swift */; };
 		B8D05E041D98C38800DC328F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8D05E021D98C38800DC328F /* Main.storyboard */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B8B2A3FD1D996BCF0032D83B /* LongPressButton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LongPressButton-Bridging-Header.h"; sourceTree = "<group>"; };
+		B8B2A3FE1D996BCF0032D83B /* UIView+Shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shadow.h"; sourceTree = "<group>"; };
+		B8B2A3FF1D996BCF0032D83B /* UIView+Shadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shadow.m"; sourceTree = "<group>"; };
 		B8D05DFB1D98C38800DC328F /* LongPressButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LongPressButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D05DFE1D98C38800DC328F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8D05E001D98C38800DC328F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,9 @@
 				B8D05E0A1D98C38800DC328F /* Info.plist */,
 				B8D05E2D1D98C3C600DC328F /* LongPressButton.swift */,
 				B8D05E2F1D98C3D900DC328F /* UIView+Shadow.swift */,
+				B8B2A3FE1D996BCF0032D83B /* UIView+Shadow.h */,
+				B8B2A3FF1D996BCF0032D83B /* UIView+Shadow.m */,
+				B8B2A3FD1D996BCF0032D83B /* LongPressButton-Bridging-Header.h */,
 			);
 			path = LongPressButton;
 			sourceTree = "<group>";
@@ -200,6 +207,7 @@
 					B8D05DFA1D98C38800DC328F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4B6J56772J;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					B8D05E0E1D98C38800DC328F = {
@@ -270,6 +278,7 @@
 			files = (
 				B8D05E301D98C3D900DC328F /* UIView+Shadow.swift in Sources */,
 				B8D05E011D98C38800DC328F /* ViewController.swift in Sources */,
+				B8B2A4001D996BCF0032D83B /* UIView+Shadow.m in Sources */,
 				B8D05DFF1D98C38800DC328F /* AppDelegate.swift in Sources */,
 				B8D05E2E1D98C3C600DC328F /* LongPressButton.swift in Sources */,
 			);
@@ -423,11 +432,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4B6J56772J;
 				INFOPLIST_FILE = LongPressButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Planhola.LongPressButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LongPressButton/LongPressButton-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -436,11 +448,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4B6J56772J;
 				INFOPLIST_FILE = LongPressButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Planhola.LongPressButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LongPressButton/LongPressButton-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -522,6 +536,7 @@
 				B8D05E251D98C38800DC328F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8D05E261D98C38800DC328F /* Build configuration list for PBXNativeTarget "LongPressButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +545,7 @@
 				B8D05E281D98C38800DC328F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8D05E291D98C38800DC328F /* Build configuration list for PBXNativeTarget "LongPressButtonUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +554,7 @@
 				B8D05E2B1D98C38800DC328F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

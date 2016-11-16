@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var roundBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        roundBtn.layer.cornerRadius = 70 / 2
+        roundBtn.layer.borderColor = UIColor.red.cgColor
+        roundBtn.layer.borderWidth = 3
     }
 
     override func didReceiveMemoryWarning() {
